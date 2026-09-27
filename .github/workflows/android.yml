@@ -2,9 +2,10 @@ name: Android CI
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches: [ “master” ]
+    paths:
+      - '**.md'
+      - 'README.md'
 
 jobs:
   build:
